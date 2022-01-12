@@ -10,17 +10,12 @@ rm -rf ~/Library/42_cache
 rm -rf ~/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/
 rm -rf ~/Library/Application\ Support/Slack/Cache/
 rm -rf ~/Library/Application\ Support/Slack/Code\ Cache/
-rm -rf ~/Library/Application\ Support/Slack/Code\ Cache/
-rm -rf ~/Library/Application\ Support/Slack/Cache/
-rm -rf ~/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/
-# rm -rf ~/Library/ApplicationSupport/CrashReporter/*
-# rm -rf ~/Library/Application\ Support/Code/*
+rm -rf ~/Library/ApplicationSupport/CrashReporter/*
+rm -rf ~/Library/Application\ Support/Code/*
 # rm -rf ~/Library/Group\ Containers/*
 rm -rf ~/.Trash/*
 #rm -rf ~/Library/Safari/*
-# rm -rf ~/.kube/cache/*
-# rm -rf ~/Library/Application\ Support/Code/CachedData/*
-# rm -rf ~/Library/Application\ Support/Code/User/workspaceStoratge
+rm -rf ~/.kube/cache/*
 # rm -rf ~/Library/Containers/com.docker.docker/Data/vms/*
 #rm -rf ~/Library/Containers/com.apple.Safari/Data/Library/Caches/*
 # rm -rf ~/Library/Application\ Support/Firefox/Profiles/hdsrd79k.default-release/storage
