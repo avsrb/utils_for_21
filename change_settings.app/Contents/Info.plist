@@ -34,7 +34,7 @@
 	<key>CFBundleIconFile</key>
 	<string>ApplicationStub</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.automator.change-settings</string>
+	<string>com.apple.automator.change_settings</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
