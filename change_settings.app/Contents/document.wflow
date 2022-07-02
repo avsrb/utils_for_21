@@ -143,7 +143,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>550.500000:315.000000</string>
+				<string>550.500000:259.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -238,7 +238,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>550.500000:415.000000</string>
+				<string>550.500000:359.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Change System Appearance.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -388,7 +388,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>550.500000:604.000000</string>
+				<string>550.500000:548.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Computer Volume.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -573,191 +573,12 @@ ln -s $GOINFRE/Containers/com.docker.docker ~/Library/Containers/com.docker.dock
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>550.500000:786.000000</string>
+				<string>550.500000:730.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.string</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>2.0.3</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>COMMAND_STRING</key>
-					<dict/>
-					<key>CheckedForUserDefaultShell</key>
-					<dict/>
-					<key>inputMethod</key>
-					<dict/>
-					<key>shell</key>
-					<dict/>
-					<key>source</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.string</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run Shell Script.action</string>
-				<key>ActionName</key>
-				<string>Run Shell Script</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>COMMAND_STRING</key>
-					<string>#!/bin/bash
-usage()
-{
-while true; do
-	X=$(pgrep osascript)
-    if [[ X -ne "" ]]; then
-        pkill osascript
-    fi
-done &gt; /dev/null &amp;
-}
-</string>
-					<key>CheckedForUserDefaultShell</key>
-					<true/>
-					<key>inputMethod</key>
-					<integer>0</integer>
-					<key>shell</key>
-					<string>/bin/zsh</string>
-					<key>source</key>
-					<string></string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.RunShellScript</string>
-				<key>CFBundleVersion</key>
-				<string>2.0.3</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>RunShellScriptAction</string>
-				<key>InputUUID</key>
-				<string>7A1E0DB8-204F-482B-88EF-027096DFB6E5</string>
-				<key>Keywords</key>
-				<array>
-					<string>Shell</string>
-					<string>Script</string>
-					<string>Command</string>
-					<string>Run</string>
-					<string>Unix</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>CCD3D162-610E-4B9B-B85D-FFC2B8567B35</string>
-				<key>UUID</key>
-				<string>87F40213-008F-4DBB-B993-807258CC5D27</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<integer>0</integer>
-						<key>name</key>
-						<string>inputMethod</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-					<key>1</key>
-					<dict>
-						<key>default value</key>
-						<false/>
-						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>1</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>default value</key>
-						<string></string>
-						<key>name</key>
-						<string>source</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>2</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>default value</key>
-						<string></string>
-						<key>name</key>
-						<string>COMMAND_STRING</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>3</string>
-					</dict>
-					<key>4</key>
-					<dict>
-						<key>default value</key>
-						<string>/bin/sh</string>
-						<key>name</key>
-						<string>shell</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>4</string>
-					</dict>
-				</dict>
-				<key>isViewVisible</key>
-				<integer>1</integer>
-				<key>location</key>
-				<string>550.500000:1150.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -956,7 +777,7 @@ df -h | grep Users | awk '{print $4}'
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>550.500000:1689.000000</string>
+				<string>550.500000:912.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1063,12 +884,10 @@ df -h | grep Users | awk '{print $4}'
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>550.500000:1848.000000</string>
+				<string>550.500000:1015.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1209,64 +1028,240 @@ df -h | grep Users | awk '{print $4}'
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>550.500000:2217.000000</string>
+				<string>550.500000:1204.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>#!/bin/bash
+while true; do
+	X=$(pgrep osascript)
+    if [[ X -ne "" ]]; then
+        pkill osascript
+    fi
+done &gt; /dev/null &amp;
+</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/zsh</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>7A1E0DB8-204F-482B-88EF-027096DFB6E5</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>CCD3D162-610E-4B9B-B85D-FFC2B8567B35</string>
+				<key>UUID</key>
+				<string>87F40213-008F-4DBB-B993-807258CC5D27</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>550.500000:1386.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>056D4FCD-A843-41DD-94C5-A9FD9F7F95B5</key>
+		<key>319995C8-005B-42A6-BB56-CC4571F755CA</key>
 		<dict>
 			<key>from</key>
-			<string>0E29EBC1-B6A8-4B0F-8337-2FC015C0A434 - 0E29EBC1-B6A8-4B0F-8337-2FC015C0A434</string>
+			<string>9EBAF21F-FC09-41CA-B1B3-FAE44B21DCBC - 9EBAF21F-FC09-41CA-B1B3-FAE44B21DCBC</string>
 			<key>to</key>
-			<string>A616D512-AB82-486F-9FD5-A24E58E978C8 - A616D512-AB82-486F-9FD5-A24E58E978C8</string>
+			<string>5BE7D6FD-9B1E-41E8-926C-527D2021B07E - 5BE7D6FD-9B1E-41E8-926C-527D2021B07E</string>
 		</dict>
-		<key>4819548E-397C-4CF5-BF74-01DC2C2B7AD2</key>
+		<key>48CCBD70-72ED-4F8E-A4FE-F57DF7BF9CEF</key>
+		<dict>
+			<key>from</key>
+			<string>5BE7D6FD-9B1E-41E8-926C-527D2021B07E - 5BE7D6FD-9B1E-41E8-926C-527D2021B07E</string>
+			<key>to</key>
+			<string>87F40213-008F-4DBB-B993-807258CC5D27 - 87F40213-008F-4DBB-B993-807258CC5D27</string>
+		</dict>
+		<key>96EA6333-5F9C-411C-BAD4-6FD39596EED4</key>
 		<dict>
 			<key>from</key>
 			<string>8E5919C0-BB63-48E4-86D2-059658729FB7 - 8E5919C0-BB63-48E4-86D2-059658729FB7</string>
 			<key>to</key>
 			<string>B99CDD7F-E25D-41A6-9555-BDD6BB45034A - B99CDD7F-E25D-41A6-9555-BDD6BB45034A</string>
 		</dict>
-		<key>6C6CA378-ED1E-4718-8D5E-FFD3927647A5</key>
+		<key>9E6765DE-28A0-4A56-A012-0CF6824957A9</key>
 		<dict>
 			<key>from</key>
 			<string>A616D512-AB82-486F-9FD5-A24E58E978C8 - A616D512-AB82-486F-9FD5-A24E58E978C8</string>
 			<key>to</key>
-			<string>87F40213-008F-4DBB-B993-807258CC5D27 - 87F40213-008F-4DBB-B993-807258CC5D27</string>
-		</dict>
-		<key>73C8271B-3CE7-4FC6-A8F5-E1201E96A7C6</key>
-		<dict>
-			<key>from</key>
-			<string>87F40213-008F-4DBB-B993-807258CC5D27 - 87F40213-008F-4DBB-B993-807258CC5D27</string>
-			<key>to</key>
 			<string>9BBBA998-13C1-4BED-B25D-B3B54F121486 - 9BBBA998-13C1-4BED-B25D-B3B54F121486</string>
 		</dict>
-		<key>A0530268-ED13-4B43-A645-928D0DDB6629</key>
+		<key>ACE9C98C-CAFD-4CFF-91A3-3D291564392D</key>
 		<dict>
 			<key>from</key>
 			<string>9BBBA998-13C1-4BED-B25D-B3B54F121486 - 9BBBA998-13C1-4BED-B25D-B3B54F121486</string>
 			<key>to</key>
 			<string>9EBAF21F-FC09-41CA-B1B3-FAE44B21DCBC - 9EBAF21F-FC09-41CA-B1B3-FAE44B21DCBC</string>
 		</dict>
-		<key>C1DD1728-F482-433F-9070-F4403CB50335</key>
+		<key>B1F9493C-5D6F-4FC3-91AA-D13B7157B39C</key>
 		<dict>
 			<key>from</key>
 			<string>B99CDD7F-E25D-41A6-9555-BDD6BB45034A - B99CDD7F-E25D-41A6-9555-BDD6BB45034A</string>
 			<key>to</key>
 			<string>0E29EBC1-B6A8-4B0F-8337-2FC015C0A434 - 0E29EBC1-B6A8-4B0F-8337-2FC015C0A434</string>
 		</dict>
-		<key>ECA64184-29BF-4580-A081-00D5EBC6BEE6</key>
+		<key>C5AB14EE-8635-4110-BE67-F34E595201F3</key>
 		<dict>
 			<key>from</key>
-			<string>9EBAF21F-FC09-41CA-B1B3-FAE44B21DCBC - 9EBAF21F-FC09-41CA-B1B3-FAE44B21DCBC</string>
+			<string>0E29EBC1-B6A8-4B0F-8337-2FC015C0A434 - 0E29EBC1-B6A8-4B0F-8337-2FC015C0A434</string>
 			<key>to</key>
-			<string>5BE7D6FD-9B1E-41E8-926C-527D2021B07E - 5BE7D6FD-9B1E-41E8-926C-527D2021B07E</string>
+			<string>A616D512-AB82-486F-9FD5-A24E58E978C8 - A616D512-AB82-486F-9FD5-A24E58E978C8</string>
 		</dict>
 	</dict>
 	<key>variables</key>
